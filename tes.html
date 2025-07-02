@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hitung Mundur Ulang Tahun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f0f8ff;
+        }
+        #countdown {
+            font-size: 3em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hitung Mundur Ulang Tahun</h1>
+    <div id="countdown">Memuat...</div>
+
+    <script>
+        // Tanggal dan bulan ulang tahun (contoh: 27 Mei)
+        const tanggalUltah = 27;
+        const bulanUltah = 5; // Mei (1=Januari, 5=Mei)
+
+        function updateCountdown() {
+            const sekarang = new Date();
+            const tahunSekarang = sekarang.getFullYear();
+
+            // Tanggal ulang tahun di tahun ini
+            let ultah = new Date(tahunSekarang, bulanUltah - 1, tanggalUltah);
+
+            // Kalau ulang tahun sudah lewat, pindah ke tahun depan
+            if (ultah < sekarang) {
+                ultah = new Date(tahunSekarang + 1, bulanUltah - 1, tanggalUltah);
+            }
+
+            // Hitung selisih waktu dalam milidetik
+            const selisihMs = ultah - sekarang;
+
+            // Kalau sudah hari ultah (tanggal dan bulan pas)
+            if (
+                sekarang.getDate() === tanggalUltah &&
+                (sekarang.getMonth() + 1) === bulanUltah
+            ) {
+                // Redirect ke halaman ultah.html
+                window.location.href = "ultah.html";
+                return;
+            }
+
+            // Hitung selisih waktu dalam detik
+            const selisihDetik = Math.floor(selisihMs / 1000);
+
+            // Hitung hari, jam, menit, detik
+            const hari = Math.floor(selisihDetik / (3600 * 24));
+            const jam = Math.floor((selisihDetik % (3600 * 24)) / 3600);
+            const menit = Math.floor((selisihDetik % 3600) / 60);
+            const detik = selisihDetik % 60;
+
+            document.getElementById("countdown").textContent =
+                `${hari} hari ${jam} jam ${menit} menit ${detik} detik lagi`;
+        }
+
+        // Update tiap 1 detik
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+
+</body>
+</html>
+

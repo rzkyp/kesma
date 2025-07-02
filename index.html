@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KESMA</title>
+    <meta property="og:title" content="KESMA | HMJMI" />
+    <link href="paralax/agama_kesma.png" rel="icon" type="image/png" />
+    <meta name="description" content="Kesejahteraan Mahasiswa" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="container">
+            <a href="#beranda" class="nav-logo">
+                <img src="paralax/logo.png" class="nav-logo" alt="logo">
+            </a>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#beranda" class="nav-link">Beranda</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#susunanstruktural" class="nav-link">Susunan</a></li>
+                <li class="dropdown">
+                    <a href="" class="nav-link">Profile <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blank">Event</a></li>
+                        <li><a href="angkatan25.html">Angkatan 2025</a></li>
+                        <li><a href="angkatan24.html">Angkatan 2024</a></li>
+                        <li><a href="blank">Angkatan 2023</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Beranda -->
+        <section class="ralax" id="beranda">
+            <div class="paralax-text">
+                <h2 id="text" class="animate__animated animate__fadeInUp animate__delay-3s">KESMA</h2>
+                <h4 id="kepanjangan" class="animate__animated animate__fadeInUp animate__delay-2s">Kesejahteraan Mahasiswa</h4>
+            </div>
+            <!-- Gambar-gambar ini sekarang memiliki class untuk styling z-index -->
+            <img src="paralax/hill2.png" class="paralax-img hill2" />
+            <img src="paralax/hill3.png" class="paralax-img hill3" />
+            <img src="paralax/hill4.png" class="paralax-img hill4" />
+            <img src="paralax/hill5.png" class="paralax-img hill5" />
+            <img src="paralax/plant.png" class="paralax-img plant" />
+            <img src="paralax/leaf.png" class="paralax-leaf" />
+            <img src="paralax/tree.png" class="paralax-img tree" />
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="container content-center">
+                <h2 class="section-title">About</h2>
+              <div class="p-5">
+                <article class="kotak">
+                    <h3 class="text-2xl font-bold mb-2">Kesejahteraan Mahasiswa</h3>
+                    <p class="text-lg p-4 desk">
+                        Kesejahteraan Mahasiswa (KESMA), yaitu keanggotaan biasa yang bertugas dalam mensejahterakan mahasiswa dan membangun sisi religius serta jiwa sosial di lingkungan Manajemen Informatika.
+                    </p>
+                </article>
+              </div>
+                <div class="grid-container-2 p-5">
+                    <article class="kotak">
+                        <h3 class="text-xl font-bold mb-2">AGAMA</h3>
+                        <img alt="Agama" class="sub-div-img" src="paralax/agama_kesma.png" />
+                        <p>Agama merupakan subdivisi yang bergerak dalam hal keagamaan dan bertujuan untuk meningkatkan sisi religius mahasiswa Manajemen Informatika.</p>
+                    </article>
+                    <article class="kotak">
+                        <h3 class="text-xl font-bold mb-2">SOSIAL</h3>
+                        <img alt="Sosial" class="sub-div-img" src="paralax/sosial_kesma.png" />
+                        <p>Sosial merupakan subdivisi yang bergerak dalam hal sosial untuk meningkatkan kesejahteraan dan kepedulian mahasiswa Manajemen Informatika.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Susunan Struktural -->
+        <section id="susunanstruktural">
+            <div class="container content-center">
+                <h2 class="section-title">Susunan Struktural</h2>
+                <div class="grid-container-structural p-5">
+                    <article class="kotak-struktural">
+                        <h3 class="jabatan">Ketua</h3>
+                        <img alt="Foto Ketua" class="foto-struktural" src="http://hmjmi.polsri.ac.id/sources/kesma/M.RIZQON%20YASIR.png" />
+                        <p class="nama">Muhamad Rizqon Yasir</p>
+                        <div class="countdown" id="cd-Rizqon">Memuat...</div>
+                    </article>
+                     <article class="kotak-struktural">
+                        <h3 class="jabatan">Wakil Ketua</h3>
+                        <img alt="Foto Wakil Ketua" class="foto-struktural" src="http://hmjmi.polsri.ac.id/sources/kesma/ZALSABILA%20HERAWATY.png" />
+                        <p class="nama">Zalsabila Herawaty</p>
+                        <div class="countdown" id="cd-Zalsabila">Memuat...</div>
+                    </article>
+                     <article class="kotak-struktural">
+                        <h3 class="jabatan">Sekretaris</h3>
+                        <img alt="Foto Sekretaris" class="foto-struktural" src="http://hmjmi.polsri.ac.id/sources/kesma/AISYAH%20ARIANTI.png" />
+                        <p class="nama">Aisyah Arianti</p>
+                        <div class="countdown" id="cd-Aisyah">Memuat...</div>
+                    </article>
+                     <article class="kotak-struktural">
+                        <h3 class="jabatan">Bendahara</h3>
+                        <img alt="Foto Bendahara" class="foto-struktural" src="http://hmjmi.polsri.ac.id/sources/kesma/AZZAHRA%20DINDA%20FEBRIANTI.png" />
+                        <p class="nama">Azzahra Dinda Febrianti</p>
+                        <div class="countdown" id="cd-Azzahra">Memuat...</div>
+                    </article>
+                    <article class="kotak-struktural">
+                        <h3 class="jabatan"> Koor Divisi Agama </h3>
+                        <img alt="Agama" class="foto-struktural" src="http://hmjmi.polsri.ac.id/sources/kesma/M.SUTAN%20ARTHA.png" />
+                        <p class="nama">Muhammad Sutan Artha</p>
+                        <div class="countdown" id="cd-Sutan">Memuat...</div>
+                    </article>
+                    <article class="kotak-struktural">
+                        <h3 class="jabatan">Koor Divisi Sosial</h3>
+                        <img alt="Sosial" class="foto-struktural" src="http://hmjmi.polsri.ac.id/sources/kesma/ADHYAKSA%20MICKO%20SATRIA.png" />
+                        <p class="nama">Adhyaksa Micko Satria</p>
+                        <div class="countdown" id="cd-Micko">Memuat...</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact -->
+   <section class="min-h-screen  px-4 py-12 flex flex-col items-center justify-center" id="contact">
+    <h2 class="text-4xl font-extrabold text-white-400 mb-8 select-none"><br>
+        Contact Us
+    </h2>
+    <form autocomplete="off" class="w-full max-w-lg kotak rounded-lg p-8 shadow-lg" id="contactForm" novalidate="">
+     <div class="mb-6">
+      <label class="block mb-2   text-white-300" for="name">
+       Nama
+      </label>
+      <input class="w-full rounded-md px-4 py-2 text-gray-900   focus:ring-2 focus:ring-white-400" id="name" name="name" required="" type="text" placeholder="Nama"/>
+     </div>
+     <div class="mb-6">
+      <label class="block mb-2   text-white-300" for="phone">
+       No HP
+      </label>
+      <input class="w-full rounded-md px-4 py-2 text-gray-900   focus:ring-2 focus:ring-white-400" id="phone" name="phone" pattern="^\+?\d{7,15}$" placeholder="+628123456789" required="" type="tel"/>
+     </div>
+     <div class="mb-6">
+      <span class="block mb-2   text-white-300">
+       Jenis Kelamin
+      </span>
+      <label class="inline-flex items-center mr-6">
+       <input class="form-radio text-white-400" name="gender" required="" type="radio" value="Laki-laki"/>
+       <span class="ml-2">
+        Laki-laki
+       </span>
+      </label>
+      <label class="inline-flex items-center">
+       <input class="form-radio text-white-400" name="gender" required="" type="radio" value="Perempuan"/>
+       <span class="ml-2">
+        Perempuan
+       </span>
+      </label>
+     </div>
+     <div class="mb-6">
+      <label class="block mb-2   text-white-300" for="pesan">
+       Pesan
+      </label>
+      <textarea class="w-full rounded-md px-4 py-2 text-gray-900   focus:ring-2 focus:ring-white-400" id="pesan" name="pesan" required="" placeholder="Input Pesan Kamu" rows="5"></textarea>
+     </div>
+     <button class="w-full bg-green-400 hover:bg-white-500 text-gray-900 font-bold py-3 rounded-md transition" type="submit">
+      Kirim Pesan
+     </button>
+     <p class="mt-4 text-center  " id="formStatus">
+     </p>
+    </form><br><br><br><br><br>
+</section>
+
+<footer>
+    <h3 class="copyright">
+        Copyright © 2025 Kesma. All Rights Reserved.
+    </h3>
+</footer>
+    </main>
+</body>
+</html>
