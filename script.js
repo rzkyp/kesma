@@ -48,7 +48,7 @@ const ulangTahunList = [
     { nama: "Sutan", tanggal: 30, bulan: 5 },
     { nama: "Micko", tanggal: 21, bulan: 8 },
     { nama: "Annisa", tanggal: 30, bulan: 5 },
-    { nama: "Difasa", tanggal: 30, bulan: 5 },
+    { nama: "Difasa", tanggal: 26, bulan: 4 },
     { nama: "Ekik", tanggal: 30, bulan: 5 },
     { nama: "Risha", tanggal: 30, bulan: 5 },
     { nama: "Jeje", tanggal: 30, bulan: 5 },
