@@ -186,5 +186,31 @@
     </h3>
 </footer>
     </main>
+
+    <script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // cegah reload halaman
+
+    const nama = document.getElementById("name").value.trim();
+    const nohp = document.getElementById("phone").value.trim();
+    const pesan = document.getElementById("pesan").value.trim();
+    const gender = document.querySelector('input[name="gender"]:checked')?.value;
+
+    if (!nama || !nohp || !pesan || !gender) {
+      document.getElementById("formStatus").innerText = "Harap isi semua field!";
+      return;
+    }
+
+    // Format pesan ke dalam teks WhatsApp
+    const message = `Halo Admin,%0A%0ASaya ingin menghubungi melalui form website:%0A%0A🔹 *Nama*: ${nama}%0A🔹 *No HP*: ${nohp}%0A🔹 *Jenis Kelamin*: ${gender}%0A🔹 *Pesan*: ${pesan}%0A%0ATerima kasih.`;
+
+    const whatsappNumber = "6282280462726"; // <- Ganti ini dengan nomor admin tanpa tanda +
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+    window.location.href = whatsappURL; 
+  });
+</script>
+
+    
 </body>
 </html>
