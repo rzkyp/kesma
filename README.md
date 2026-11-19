@@ -28,8 +28,3 @@ Situs resmi organisasi KESMA (Kesejahteraan Mahasiswa) HMJMI. Dibangun dengan Ta
 ## Jalankan
 
 Buka `index.html` di browser, atau serve statis (mis. `python -m http.server`).
-
-
----
-
-<p align="center"><sub>Made with a little help from <b>Hermes</b> · dev colab with hermes</sub></p>
