@@ -1,19 +1,19 @@
-<p align="center">
-  <img src="assets/banner.png" alt="KESMA — HMJMI" style="width:100%;max-height:260px;object-fit:cover"/>
-</p>
+<pre>
+ _  ________  _____ __  __          
+| |/ /  ____|/ ____|  \/  |   /\    
+| &#x27; /| |__  | (___ | \  / |  /  \   
+|  &lt; |  __|  \___ \| |\/| | / /\ \  
+| . \| |____ ____) | |  | |/ ____ \ 
+|_|\_\______|_____/|_|  |_/_/    \_\
+                                    
+                                    
+</pre>
 
-<p align="center">
-  <img src="assets/logo.png" alt="KESMA — HMJMI logo" width="110"/>
-</p>
-
-<h1 align="center">KESMA — HMJMI</h1>
-
-<p align="center">Website organisasi KESMA HMJMI</p>
+<p align="center">Kesejahteraan Mahasiswa · HMJMI</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Tailwind-38B2AC" alt=""/>
-  <img src="https://img.shields.io/badge/HTML-E34F26" alt=""/>
-  <img src="https://img.shields.io/badge/CSS-1572B6" alt=""/>
+  <img src="https://img.shields.io/badge/website-blue" alt=""/>
   <img src="https://img.shields.io/badge/MIT-2ea043" alt=""/>
 </p>
 
