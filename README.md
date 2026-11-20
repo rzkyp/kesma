@@ -12,6 +12,9 @@
 <p align="center">Kesejahteraan Mahasiswa · HMJMI</p>
 
 <p align="center">
+  <img src="docs/logo.png" alt="ZEXO — ZeroDev" width="110">
+</p>
+<p align="center">
   <img src="https://img.shields.io/badge/Tailwind-38B2AC" alt=""/>
   <img src="https://img.shields.io/badge/website-blue" alt=""/>
   <img src="https://img.shields.io/badge/MIT-2ea043" alt=""/>
